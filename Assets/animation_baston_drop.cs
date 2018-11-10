@@ -7,10 +7,9 @@ public class animation_baston_drop : MonoBehaviour
 {
     public  int test_fin = 1;
     public Vector3 test;
-    public int[] pow2 = new int[6];
     public int[] pow = new int[6];
     public float[] modif = new float[12];
-    public int nbJ = 3;
+    public int nbJ = 6;
 
     public float[] modifSize(float [] modifs, int counter)
     {
@@ -45,35 +44,6 @@ public class animation_baston_drop : MonoBehaviour
             modif[a * 2 + 1] = (Mathf.Sin(2 * Mathf.PI / nbJ * (a + 1))) * 100;
         }
     }
-    private void OnTriggerEnter(Collider other)
-    {
-        int tests;
-        MonoBehaviour.print("c bon");
-        if (other.gameObject.tag == "J1")
-        {
-            MonoBehaviour.print("J1 gagne le loot");
-        }
-        if (other.gameObject.tag == "J2")
-        {
-            MonoBehaviour.print("J2 gagne le loot");
-        }
-        if (other.gameObject.tag == "J3")
-        {
-            MonoBehaviour.print("J3 gagne le loot");
-        }
-        if (other.gameObject.tag == "J4")
-        {
-            MonoBehaviour.print("J4 gagne le loot");
-        }
-        if (other.gameObject.tag == "J5")
-        {
-            MonoBehaviour.print("J5 gagne le loot");
-        }
-        if (other.gameObject.tag == "J6")
-        {
-            MonoBehaviour.print("J6 gagne le loot");
-        }
-    }
     private void Update()
     {
             for (int a = 0; a < nbJ; a++)
@@ -81,18 +51,47 @@ public class animation_baston_drop : MonoBehaviour
                 pow[a] = 0;
             }
             if (Input.GetKeyDown(KeyCode.Alpha1))
-                pow[0] += 5;
-            pow2[0] += 5;
+                pow[1] += 5; //1
             if (Input.GetKeyDown(KeyCode.Alpha2))
-                pow[1] += 5;
-            pow2[1] += 5;
+                pow[2] -= 5;
             if (Input.GetKeyDown(KeyCode.Alpha3))
                 pow[2] += 5;
-            pow2[2] += 5;
             if (Input.GetKeyDown(KeyCode.Alpha4))
-                pow[3] += 5;
-            pow2[3] += 5;
+                pow[0] -= 5;
+            if (Input.GetKeyDown(KeyCode.Alpha5))
+                pow[0] += 5; //0
+            if (Input.GetKeyDown(KeyCode.Alpha6))
+                pow[1] -= 5;
             test = move(pow, modif, nbJ);
             Vector3 X = gameObject.GetComponent<Transform>().position += test;
+    }
+    void OnTriggerEnter(Collider other)
+    {
+        int tests;
+        MonoBehaviour.print("c bon");
+        if (other.gameObject.name == "Player1")
+        {
+            MonoBehaviour.print("J1 gagne le loot");
+        }
+        if (other.gameObject.name == "Player2")
+        {
+            MonoBehaviour.print("J2 gagne le loot");
+        }
+        if (other.gameObject.name == "Player3")
+        {
+            MonoBehaviour.print("J3 gagne le loot");
+        }
+        if (other.gameObject.name == "Player4")
+        {
+            MonoBehaviour.print("J4 gagne le loot");
+        }
+        if (other.gameObject.name == "Player5")
+        {
+            MonoBehaviour.print("J5 gagne le loot");
+        }
+        if (other.gameObject.name == "Player6")
+        {
+            MonoBehaviour.print("J6 gagne le loot");
+        }
     }
 }
