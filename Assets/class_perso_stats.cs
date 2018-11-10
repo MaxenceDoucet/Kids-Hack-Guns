@@ -6,17 +6,17 @@ public class class_perso_stats : MonoBehaviour
 {
     public struct perso_stats
     {
-        int degats_percant_distance;
-        int degats_normal_distance;
-        int blindage;
-        int degats_percant_melee;
-        int degats_normal_mele;
-        int nb_blocage;
-        int vieMax;
-        int blessure;
-        int special;
-        int portee;
-        int action_restante;
-        int actionMax;
+        public int degats_percant_distance;
+        public int degats_normal_distance;
+        public int blindage;
+        public int degats_percant_melee;
+        public int degats_normal_mele;
+        public int nb_blocage;
+        public int vieMax;
+        public int blessure;
+        public int special;
+        public int portee;
+        public int action_restante;
+        public int actionMax;
     }
 }
