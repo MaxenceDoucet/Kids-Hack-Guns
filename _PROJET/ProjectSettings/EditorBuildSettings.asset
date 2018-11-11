@@ -8,4 +8,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Menu Principal.unity
     guid: d544879e269da364f801543cdadfdc36
+  - enabled: 1
+    path: Assets/Scenes/Kreer Boss.unity
+    guid: 6512fec47d6acf348847bb7eab298e65
+  - enabled: 1
+    path: Assets/Scenes/Kreer Kids.unity
+    guid: 991a0da5ca51761418cfa092a4aa54b8
   m_configObjects: {}
