@@ -51,24 +51,23 @@ public class animation_baston_drop : MonoBehaviour
                 pow[a] = 0;
             }
             if (Input.GetKeyDown(KeyCode.Alpha1))
-                pow[1] += 5; //1
+                pow[1] += 2; //1
             if (Input.GetKeyDown(KeyCode.Alpha2))
-                pow[2] -= 5;
+                pow[2] -= 2;
             if (Input.GetKeyDown(KeyCode.Alpha3))
-                pow[2] += 5;
+                pow[2] += 2;
             if (Input.GetKeyDown(KeyCode.Alpha4))
-                pow[0] -= 5;
+                pow[0] -= 2;
             if (Input.GetKeyDown(KeyCode.Alpha5))
-                pow[0] += 5; //0
+                pow[0] += 2; //0
             if (Input.GetKeyDown(KeyCode.Alpha6))
-                pow[1] -= 5;
+                pow[1] -= 2;
             test = move(pow, modif, nbJ);
             Vector3 X = gameObject.GetComponent<Transform>().position += test;
     }
     void OnTriggerEnter(Collider other)
     {
         int tests;
-        MonoBehaviour.print("c bon");
         if (other.gameObject.name == "Player1")
         {
             MonoBehaviour.print("J1 gagne le loot");
