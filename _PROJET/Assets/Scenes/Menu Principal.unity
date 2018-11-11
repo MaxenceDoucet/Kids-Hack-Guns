@@ -549,11 +549,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 534669902}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-<<<<<<< HEAD:Assets/Menu Principal.unity
-  m_LocalPosition: {x: 0, y: 1, z: -327}
-=======
   m_LocalPosition: {x: 0, y: 0, z: -10}
->>>>>>> f2a446459cb166a56882662b47aa3e4f3e8d8b06:_PROJET/Assets/Scenes/Menu Principal.unity
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1501,13 +1497,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1276557530}
   m_HandleRect: {fileID: 1276557529}
   m_Direction: 0
-<<<<<<< HEAD:Assets/Menu Principal.unity
   m_Value: 0.5
   m_Size: 0.33333334
-=======
-  m_Value: 0.42257538
-  m_Size: 0.33460772
->>>>>>> f2a446459cb166a56882662b47aa3e4f3e8d8b06:_PROJET/Assets/Scenes/Menu Principal.unity
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
