@@ -10,6 +10,13 @@ TagManager:
   - J4
   - J5
   - J6
+  - ButtonPrevious
+  - ButtonNext
+  - ButtonBackground1
+  - ButtonBackground2
+  - ButtonBackground3
+  - ButtonBackground4
+  - ButtonBackground5
   layers:
   - Default
   - TransparentFX
